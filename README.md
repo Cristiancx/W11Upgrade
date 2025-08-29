@@ -9,6 +9,7 @@ The upgrade is designed to run silently (or with minimal prompts) and can be use
 - Sufficient free disk space
 - Internet access to download updates (if `DynamicUpdate=Enable`)
 - Windows 10 system that meets Windows 11 hardware requirements
+- Download all the files ( .iso, .ps1, .bat ) onto "C:\ProgramData\W11\"; create the folder if necessary.
 
 ## ISO File
 The Windows 11 ISO required for this upgrade is **not included** here.  
