@@ -35,7 +35,7 @@ function Set-NeverSleep {
     powercfg /Change hibernate-timeout-ac 0
     powercfg /Change hibernate-timeout-dc 0
 
-    Write-Host "✔ Sleep and hibernate timeouts set to Never."
+    Write-Host "Sleep and hibernate timeouts set to Never."
 }
  
 function Resolve-SetupSource {
@@ -115,5 +115,4 @@ finally {
   try {
     if ($src -and $src.Mount) { Dismount-DiskImage -ImagePath $Source | Out-Null }
   } catch { }
-
 }
