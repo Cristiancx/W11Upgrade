@@ -13,7 +13,7 @@
 
 [CmdletBinding()]
 param(
-  [string]$Source = "C:\Win11_24H2.iso",
+  [string]$Source = "C:\ProgramData\W11\Win11_24H2.iso",
   [ValidateSet("Enable","Disable")]
   [string]$DynamicUpdate = "Disable"
 )
@@ -115,4 +115,5 @@ finally {
   try {
     if ($src -and $src.Mount) { Dismount-DiskImage -ImagePath $Source | Out-Null }
   } catch { }
+
 }
